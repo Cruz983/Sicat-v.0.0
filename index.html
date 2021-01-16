@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>MI PROYECTO</title>
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<body>
+
+  <!-- Header -->
+  <!-- <header>
+		<nav role="navigation">
+			<ul>
+				<h1>TRADUCTOR DE VOZ VENEZOLANO</h1>
+			</ul>                
+		</nav>		
+  </header>        -->
+  
+  <div class="container">
+
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>
+
+  <div class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Modal body text goes here.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div> -->
+    
+    <!-- <h1 class="center" id="headline">
+      <a href="http://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html">
+    Instrucciones del Programa</a> By: Me</h1> -->
+
+    
+      <div id="div_language" class="text-center">
+        <select id="select_language" onchange="updateCountry()"></select>
+        &nbsp;&nbsp;
+        <select id="select_dialect"></select>
+      </div><br><br>
+    
+
+    <div id="info">
+      <p id="info_start">Haz click en el micrófono para comenzar.</p>
+      <p id="info_speak_now">Habla...</p>
+      <p id="info_no_speech">No se ha detectado ninguna voz.
+        <a href="//support.google.com/chrome/bin/answer.py?hl=en&amp;answer=1407892">Es posible que deba ajustar su micrófono.</a>.</p>
+      <p id="info_no_microphone" style="display:none">
+        No se detecto ningún micrófono. Asegúrese de que un micrófono esta instalado y que
+        <a href="//support.google.com/chrome/bin/answer.py?hl=en&amp;answer=1407892">
+        los ajustes del micrófono</a> están correctamente configurados.</p>
+      <p id="info_allow">Haz click en "Permitir" para activar el micrófono</p>
+      <!-- <p id="info_denied">No se aceptó el uso del microfono</p> -->
+      <p id="info_denied">No ha sido aceptado el uso del micrófono</p>
+      <p id="info_blocked">El permiso para usar el micrófono está bloqueado. Para cambiar esto, debe ir a Chrome:
+        //settings/contentExceptions#media-stream</p>
+      <p id="info_upgrade">Web Speech API no es compatible son su explorador.
+         Actualícelo a: <a href="//www.google.com/chrome">Chrome</a>
+         versión 25 o superior.</p>
+    </div>
+
+    <div id="results">
+
+        <div id="prueba">
+          <span id="final_span" class="final"></span>
+        </div>
+      
+        <span id="interim_span" class="interim"></span>  
+      <p>
+
+    </div>
+
+    <div class="center">
+      <div class="botones">
+        
+        <center>
+
+        <button id="start_button" onclick="startButton(event)">
+          <img id="start_img" src="img/mic.gif" alt="Start">
+        </button>
+
+          <!-- <button type="button" onclick="limpiar();" class="btn btn-danger boton">Limpiar campos</button> -->
+
+        </center>
+
+        <div class="sidebyside" style="text-align:right; float: right;">
+          <button id="copy_button" class="button" onclick="copyButton()">
+            Copiar contenido</button>
+          <div id="copy_info" class="info">
+            Presiona ctrl+C para copiar el texto<br>
+        </div>
+        </div>
+      </div>
+      <p>      
+    </div>
+    
+  </div>
+
+  <!-- Footer -->
+<!-- <footer>
+  <h5>Creado por Luis Enrique De la Cruz | Web Speech API propiedad de Google | 2020-2021</h5>
+</footer> -->
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
